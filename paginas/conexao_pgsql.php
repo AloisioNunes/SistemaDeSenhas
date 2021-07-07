@@ -10,9 +10,10 @@
     $banco = "bancofilas";
     $porta = 5432;
     $usuario = "postgres";
-    $senha = "9700";
+    $senha = "arroz123";
     $dsn = "pgsql:host=$servidor;port=$porta;dbname=$banco;";
 
     $pdo = new PDO($dsn,$usuario,$senha,$options);
+
 
 ?>

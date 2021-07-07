@@ -9,7 +9,7 @@
     <link href="css/formato1.css" rel="stylesheet">
    
   
-    <title>Login</title>
+    <title>Exemplo Login</title>
 <style> 
    body{
 background-color: #f5f5f5;
@@ -21,9 +21,12 @@ background-color: #f5f5f5;
 
     <form method="post" action='principal.php' class="form-signin">
     <h1 class="h3 mb-3 font-weight-normal">Coloque seus dados</h1>
+    <!--<input type="email" id="inputEmail" class="form-control" placeholder="E-mail" required autofocus> -->
         <p>E-mail: </p><input type="text" name="email" id="inputEmail" class="form-control"  placeholder="E-mail">
         <br>
         <p>Senha: </p><input type="password" name="senha" id="inputSenha" class="form-control"  placeholder="Senha">
+       
+        
        <div>
        </form>
         <button  class="btn btn-lg btn-primary btn-block" id="buttonLogin">Login</button>

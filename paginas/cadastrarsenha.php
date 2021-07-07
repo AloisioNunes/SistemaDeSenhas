@@ -7,9 +7,9 @@
     <title>Cadastrar Senha</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <style> 
-        body {
-            background-color: #f5f5f5;
-        }
+   body{
+background-color: #f5f5f5;
+}
 </style>
 </head>
 <body class="text-center">

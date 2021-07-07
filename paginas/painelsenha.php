@@ -10,14 +10,16 @@
             text-align: center;
             font-family: arial;
             background-color: #f5f5f5;
-        }
+}
+
+        
     </style>
 </head>
 <body>
-<br><br><br><br><br><br><br><br><br>
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <hr style="width:50%;">
-    <h1>Painel de senhas</h2>
+
+    <h1>Painel de chamado</h2>
     <?php
         include 'conexao_pgsql.php';
         $statement = $pdo->query("SELECT * FROM chamado");
@@ -33,7 +35,7 @@
                 <hr style="width:50%;">
             <?php
         } else {
-            ?> <h2>----</h2><hr style="width:50%;"> <?php
+            ?> <h2>----</h2> <?php
         }
             header("refresh:1;painelsenha.php");
             die();

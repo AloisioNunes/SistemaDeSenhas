@@ -25,6 +25,10 @@ background-color: #f5f5f5;
         </select>
         <br>
         <button type="submit" class="btn btn-lg btn-primary btn-block" name="buttoncadastrar">Cadastrar Senha</button>
-    </form>
+        <br>
+    
+    <br>
+    <a href="index.php"><p class="btn btn-lg btn-primary btn-block">Menu principal</p</a>
+</form>
 </body>
 </html>

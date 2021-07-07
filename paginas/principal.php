@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>Tela de Login</title>
-    <style>
-        body {
-            background-color: #f5f5f5;
-        }
-    </style>
+   
 </head>
 <body>
     
@@ -30,27 +26,19 @@
                 <h3>Usuário <?php echo $usuario['nome'] ?></h3>
                 <h4>Logado com sucesso</h4>
                 <a href="login.php"><button class="btn btn-outline-primary">Deslogar</button></a>
-                <a href="cadastrarusuario.php" target="_blank"><button class="btn btn-outline-primary">Cadastrar novo usuário</button></a>
-                <hr>
-                <div class="text-center">
-                    <h2>Painel administrativo</h2>
-                    <br>
-                    <a href="cadastrarsenha_index.php" target="_blank"><button class="btn btn-outline-dark">Cadastrar nova senha</button></a>
-                    <a href="painelsenha.php" target="_blank"><button class="btn btn-outline-dark">Abrir painel de senhas</button></a>
-                </div>
                 <hr>
                 <form method="post" class="text-center">
+               
                     <button type="submit" class="btn btn-outline-dark" name="botaofilan">Exibir fila normal</button>
                     <button type="submit" class="btn btn-outline-dark" name="botaofilap">Exibir fila preferencial</button>
-                    <button type="submit" class="btn btn-outline-dark" name="botaochamarfilan">Chamar próxima senha</button>
-                    <button type="submit" class="btn btn-outline-dark" name="botaochamarfilap">Chamar próxima senha PREFERENCIAL</button>
-                    <button type="submit" class="btn btn-outline-dark" name="botaozerar">Zerar painel de senhas</button>
+                    <button type="submit" class="btn btn-outline-dark" name="botaochamarfilan">Chamar próximo da fila normal</button>
+                    <button type="submit" class="btn btn-outline-dark" name="botaochamarfilap">Chamar próximo da fila preferencial</button>
                     <input type="hidden" name="email" id="inputEmail" value="<?php echo $email ?>">
                     <input type="hidden" name="senha" id="inputSenha" value="<?php echo $senha ?>">
                     <br>
+                <hr>    
                 </form>
-                <hr>
-
+                
             <?php
 
             function exibirFila($fila) {
@@ -119,11 +107,6 @@
                
             }
 
-            function zerarTelaChamado() {
-                executarQuery("DELETE FROM chamado");
-                ?> <h3 style="text-align:center">Painel de senhas zerado com sucesso!</h3> <?php
-            }
-
             if (isset($_POST['botaofilan'])){
                 exibirFila("filanormal");
             } else {
@@ -135,9 +118,6 @@
                     } else
                         if (isset($_POST['botaochamarfilap'])) {
                             chamarProximo("filapreferencial");
-                        } else
-                        if (isset($_POST['botaozerar'])) {
-                            zerarTelaChamado();
                         }
             }
 
