@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <title>Tela de Login</title>
+    <title>Painel Administrativo</title>
     <style>
         body {
             background-color: #f5f5f5;

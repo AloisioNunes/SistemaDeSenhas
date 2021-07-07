@@ -7,9 +7,7 @@
    
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/formato1.css" rel="stylesheet">
-   
-  
-    <title>Login</title>
+    <title>Cadastrar Usuário</title>
 <style> 
    body{
 background-color: #f5f5f5;

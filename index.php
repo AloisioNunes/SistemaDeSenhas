@@ -8,7 +8,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/signin.css" rel="stylesheet">
 
-    <title>Exemplo Login</title>
+    <title>Menu Principal</title>
     <style> 
         body{
             background-color: #f5f5f5;
@@ -18,8 +18,7 @@
 <body>   
       
 <div class="form-signin" style="text-align:center">    
-
-<h2>Menu Principal
+    <h2>Menu Principal</h2>
     <br><br>
     <a href="login.php"><button class="btn btn-lg btn-primary btn-block" type="submit">Entrar no sistema</button></a>
     <br><br>
